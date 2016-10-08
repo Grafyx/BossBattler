@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_player" x="512" y="512" name="inst_CB90B91A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_boss_image1" x="768" y="320" name="inst_65AD7E9D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="-50"/>
+    <instance objName="obj_boss1_image_fine" x="768" y="320" name="inst_65AD7E9D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="-50"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

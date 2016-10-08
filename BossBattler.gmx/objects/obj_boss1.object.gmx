@@ -34,7 +34,7 @@ charge_cooldown = 0;
 charge_duration = 0;
 firing = true;
 phase3_start = false;
-win_wait = 30;
+win_wait = 60;
 win_wait_start = false;
 </string>
           </argument>
@@ -60,7 +60,6 @@ win_wait_start = false;
             <kind>1</kind>
             <string>if win_wait_start == true {
     win_wait -= 1;
-    show_debug_message("win_wait is " + string(win_wait));
 }
 
 if (win_wait &lt;= 0) {
@@ -97,7 +96,7 @@ speed = 0
 
 if global.playing == true {
     if image_index == 15 {
-        instance_destroy()
+        //instance_destroy()
         image_speed = 0
     };
 
@@ -129,7 +128,7 @@ if global.playing == true {
 
     else if global.phase == 3{
         if phase3_start == false {move_towards_point(20,64,20)};
-        if self.x == 20 and self.y == 64 {
+        if self.x &lt;= 20 and self.y &lt;= 64 {
             phase3_start = true;
             }
         if phase3_start == true {

@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_boss_wins" x="512" y="160" name="inst_03A699CE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boss_image1" x="736" y="448" name="inst_2B3A4AC8" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="-20"/>
+    <instance objName="obj_boss1_image_fine" x="736" y="448" name="inst_2B3A4AC8" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="-20"/>
     <instance objName="obj_restart" x="448" y="288" name="inst_3193C794" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
