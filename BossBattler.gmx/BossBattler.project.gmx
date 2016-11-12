@@ -7,25 +7,38 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sp_bullet</sprite>
-    <sprite>sprites\sp_bullet_s</sprite>
-    <sprite>sprites\sp_ship</sprite>
     <sprites name="Masks">
       <sprite>sprites\msk_start</sprite>
+      <sprite>sprites\msk_hittable</sprite>
     </sprites>
     <sprites name="BossBattler">
       <sprite>sprites\sp_boss_wins</sprite>
       <sprite>sprites\sp_you_win</sprite>
       <sprite>sprites\sp_boss1</sprite>
+      <sprite>sprites\sp_ship</sprite>
+      <sprite>sprites\sp_bullet_s</sprite>
+    </sprites>
+    <sprites name="WaveFighter">
+      <sprite>sprites\spr_asteroid</sprite>
+      <sprite>sprites\spr_bomb</sprite>
+      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_bombexplode</sprite>
+      <sprite>sprites\spr_bullet_wfp</sprite>
+      <sprite>sprites\spr_player2</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_gameselect</sprite>
       <sprite>sprites\spr_menubutton</sprite>
       <sprite>sprites\sp_restart</sprite>
+      <sprite>sprites\spr_star</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_healthcheck.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
     <font>fonts\fnt_title</font>
@@ -43,6 +56,17 @@
       <object>objects\obj_boss1</object>
       <object>objects\obj_restart</object>
     </objects>
+    <objects name="WaveFighter">
+      <object>objects\obj_asteroid</object>
+      <object>objects\obj_bomb</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_bombexplode</object>
+      <object>objects\par_hittable</object>
+      <object>objects\obj_control</object>
+      <object>objects\obj_bullet_wfp</object>
+      <object>objects\obj_player_wfp</object>
+      <object>objects\obj_score</object>
+    </objects>
     <objects name="Menu">
       <object>objects\obj_menubutton</object>
       <object>objects\obj_gameselect</object>
@@ -50,6 +74,8 @@
       <object>objects\obj_arrowright</object>
       <object>objects\obj_title</object>
       <object>objects\obj_start</object>
+      <object>objects\obj_particlesystem</object>
+      <object>objects\obj_star</object>
     </objects>
   </objects>
   <rooms name="rooms">
