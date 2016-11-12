@@ -56,6 +56,7 @@ global.points = 10;</code>
     <instance objName="obj_control" x="128" y="160" name="inst_D726B9AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_wfp" x="512" y="672" name="inst_159DB867" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_score" x="512" y="64" name="inst_7C6717BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_particlesystem" x="512" y="0" name="inst_6583CDF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

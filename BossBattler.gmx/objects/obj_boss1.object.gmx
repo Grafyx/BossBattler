@@ -63,7 +63,7 @@ win_wait_start = false;
 }
 
 if (win_wait &lt;= 0) {
-    room_goto(3);
+    room_goto(rm_bb_youwin);
 }
 
 if charge_cooldown &lt;= 0 {charge_cooldown = 0}
@@ -150,7 +150,7 @@ if global.playing == true {
     }
 }
 else {
-    room_goto(2)
+    room_goto(rm_bb_gameover)
 }
 </string>
           </argument>

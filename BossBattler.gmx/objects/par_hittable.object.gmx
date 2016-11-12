@@ -123,7 +123,7 @@ scr_healthcheck();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.points -= origin_hitpoints * 20;
+            <string>global.points -= origin_hitpoints * 200;
 instance_destroy();
 </string>
           </argument>

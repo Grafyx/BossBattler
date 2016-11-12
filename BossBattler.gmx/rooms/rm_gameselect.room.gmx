@@ -54,6 +54,7 @@
     <instance objName="obj_gameselect" x="512" y="384" name="inst_84D5F606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_arrowleft" x="128" y="384" name="inst_6D304AC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_arrowright" x="896" y="384" name="inst_71FCD1DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_particlesystem" x="512" y="640" name="inst_A51AB71F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

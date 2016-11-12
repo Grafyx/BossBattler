@@ -25,6 +25,7 @@
       <sprite>sprites\spr_bombexplode</sprite>
       <sprite>sprites\spr_bullet_wfp</sprite>
       <sprite>sprites\spr_player2</sprite>
+      <sprite>sprites\spr_shockwave</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
@@ -67,6 +68,7 @@
       <object>objects\obj_player_wfp</object>
       <object>objects\obj_score</object>
       <object>objects\obj_popup</object>
+      <object>objects\obj_shockwave</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menubutton</object>
@@ -84,8 +86,8 @@
     <room>rooms\rm_gameselect</room>
     <room>rooms\rm_wavefighter1</room>
     <room>rooms\rm_bossbattler1</room>
-    <room>rooms\rm_game_over</room>
-    <room>rooms\rm_you_win</room>
+    <room>rooms\rm_bb_gameover</room>
+    <room>rooms\rm_bb_youwin</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
