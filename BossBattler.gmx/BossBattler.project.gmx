@@ -66,6 +66,7 @@
       <object>objects\obj_bullet_wfp</object>
       <object>objects\obj_player_wfp</object>
       <object>objects\obj_score</object>
+      <object>objects\obj_popup</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menubutton</object>
