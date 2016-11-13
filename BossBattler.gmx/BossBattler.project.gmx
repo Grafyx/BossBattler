@@ -26,6 +26,8 @@
       <sprite>sprites\spr_bullet_wfp</sprite>
       <sprite>sprites\spr_player2</sprite>
       <sprite>sprites\spr_shockwave</sprite>
+      <sprite>sprites\spr_playermissile</sprite>
+      <sprite>sprites\spr_heart</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
@@ -64,11 +66,14 @@
       <object>objects\obj_bombexplode</object>
       <object>objects\par_hittable</object>
       <object>objects\obj_control</object>
-      <object>objects\obj_bullet_wfp</object>
       <object>objects\obj_player_wfp</object>
       <object>objects\obj_score</object>
       <object>objects\obj_popup</object>
       <object>objects\obj_shockwave</object>
+      <object>objects\obj_bullet_wfp</object>
+      <object>objects\obj_playermissile</object>
+      <object>objects\par_shot</object>
+      <object>objects\obj_heart</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menubutton</object>
