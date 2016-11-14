@@ -28,6 +28,9 @@
       <sprite>sprites\spr_shockwave</sprite>
       <sprite>sprites\spr_playermissile</sprite>
       <sprite>sprites\spr_heart</sprite>
+      <sprite>sprites\spr_powerup</sprite>
+      <sprite>sprites\spr_shield</sprite>
+      <sprite>sprites\spr_error</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_arrow</sprite>
@@ -74,6 +77,10 @@
       <object>objects\obj_playermissile</object>
       <object>objects\par_shot</object>
       <object>objects\obj_heart</object>
+      <object>objects\obj_powerup</object>
+      <object>objects\obj_shield</object>
+      <object>objects\obj_error</object>
+      <object>objects\obj_health</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menubutton</object>

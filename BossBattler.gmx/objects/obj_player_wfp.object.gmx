@@ -27,9 +27,42 @@
             <kind>1</kind>
             <string>spd = 10;
 shootwait = 10;
+shot = obj_bullet_wfp;
+shoot_directions = 1;
+poweruptime = room_speed *3;
 global.playerhealth = 5;
 alarm[0] = shootwait;
 global.cooldown = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spd = 10;
+shootwait = 10;
+shot = obj_bullet_wfp;
+shoot_directions = 1;
+poweruptime = room_speed *3;
+with(obj_shield) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -52,7 +85,33 @@ global.cooldown = 30;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y-32,obj_playermissile);
+            <string>switch(shoot_directions) {
+    case 1:
+        instance_create(x,y-32,shot);
+        break;
+    case 2:
+        instance_create(x+16,y-32,shot);
+        instance_create(x-16,y-32,shot);
+        break;
+    case 3:
+        instance_create(x+32,y-32,shot);
+        instance_create(x,y-32,shot);
+        instance_create(x-32,y-32,shot);
+        break;
+    case 4:
+        instance_create(x+48,y-32,shot);
+        instance_create(x+16,y-32,shot);
+        instance_create(x-16,y-32,shot);
+        instance_create(x-48,y-32,shot);
+        break;
+    case 5:
+        instance_create(x+64,y-32,shot);
+        instance_create(x+32,y-32,shot);
+        instance_create(x,y-32,shot);
+        instance_create(x-32,y-32,shot);
+        instance_create(x-64,y-32,shot);
+        break;
+}
 alarm[0] = shootwait;
 </string>
           </argument>
@@ -93,6 +152,60 @@ if (global.playerhealth &lt;= 0) {
     instance_destroy();
 }
 show_debug_message(string(global.playerhealth));
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_powerup">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(other) {
+    global.powerupindex = floor(image_index);
+    instance_destroy();
+}
+switch (global.powerupindex) {
+    case 0:
+        spd *= 2;
+        break;
+    case 1:
+        global.playerhealth ++;
+        break;
+    case 2:
+        shot = obj_playermissile;
+        break;
+    case 3:
+        instance_create(x,y,obj_shield);
+        break;
+    case 4:
+        shootwait = max(shootwait -3,0);
+        break;
+    case 5:
+        shoot_directions = min(shoot_directions +1,5);
+        break;
+    case 6:
+        instance_create(x,y,obj_shockwave);
+        break;
+    case 7:
+        poweruptime += 5 * room_speed;
+        break;
+}
+alarm[1] = poweruptime;
+show_debug_message("powerupindex: " + string(global.powerupindex));
 </string>
           </argument>
         </arguments>

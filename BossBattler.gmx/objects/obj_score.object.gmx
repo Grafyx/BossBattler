@@ -29,11 +29,6 @@
 global.points = 10;
 points_old = global.points;
 shift = 64;
-
-repeat(global.playerhealth) {
-    instance_create(x+shift,y,obj_heart);
-    shift += 48;
-}
 </string>
           </argument>
         </arguments>
